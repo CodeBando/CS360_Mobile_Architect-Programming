@@ -1,2 +1,29 @@
-# CS360_Mobile_Architect-Programming
-Repository to hold course work for my Mobile Architecture and Programming course
+# CS360 - Mobile Architecture and Programming
+This repository holds the final project for my Mobile Architecture and Programming course, a fully completed Android Mobile Application. Details regarding the application and project are below.
+
+## Project Review
+
+#### Project Goals
+The goal of this project was to develop a fully functioning mobile application that user could utilize to track their schedules. It would allow a user create, edit, and delete their personal events, displaying their events in an simple and clean UI design, providing notifications to inform the user of upcoming events and support them in their day to day lives by simplifing their ability to track their busy schedules. Specific requirements of this project included: <br>
+* Ability to create an account and login to the system
+* Create/Edit/Delete events
+* Display events in a list format for the user to interact with
+* Request permissions from the user to send push notifications
+* Provide notificiations to the user 30 minutes prior to an event
+
+#### App Development and Design
+To accomplish the requirements and goals for this project, there were many screens and features needed to be successful. The application consists of 4 unique screens: <br>
+* Login Screen: This is the opening screen to the application. This screen was designed to be clean and simple, providing guidance to the user on how to access the application and create new acount.<br>
+* Main Activity Screen: This is the main activity for the application. When the user logs in, that users events are pulled into a RcyclerView, displaying all of their events in chronological order, displaying the event name and time. For each day there is an event, a date is displayed above them, creating a clean and easy way to track their events. <br>
+* Add Event Screen: This screen allows the user to create a new event by inputting event details like it's title, date, time, location and additional information. Utilizing clearly defined user input fields and easily recognizable icons, the user can quickly and efficiently create new events to add to their schedules.
+* Display Event Screen: This screen is accessed when clicking an event from the list of events in the Main Activity. It will display a screen that includes all of the event details that were included by the user. It's layout is very similar to the add event screen, providing consistance across screens and assisting the user in navigating the application. They are able to edit the event which changes the UI design by highlighting the fields that can be editted, providing visual queues as to what the user is doing.
+<br>
+
+Overall, the UI design of the application has the user's needs front and center. The layouts are clean, simple, and direct, creating clear and easy to follow navigation throughout. The application follows app development best practices, ensuring that the user feels confident when interacting with it. By implementing these practices, I ensured that the application would be accessable and ensured my designs were successful and had the user in mind at all times.
+
+#### The Development Process
+When approaching the development of the application code, I utilized many processes. I took a 3 pronged approach to this applications creation. The first approach was creating a application wireframe, allowing me to map out the various functionality and identifing what components would need to interact with each other and how I would implement it. Once the wireframes had been created, I was able to move into the coding of the individual components with confidence. When beginning the coding, I took a teired approach, working on one screen at a time. I developed the screens layout first, then implemented the various functionality method by method, testing each as I went. This allowed me to confirm functionality and make corrections before moving on to the next component. This allowed for debugging to be more streamlined and easier to address as I was able to trace the issue quickly and find the bug without having to shift through the entire code base to find the problem. Utilizing this approach, I was able to fully execute the application. <br>
+
+As a new Android developer, I faced many challenges when completing this project. It required a large ammount of trail and error and I worked to implement things I had never utilized before. By researching the various Android functionality that was available to me to complete the requirements and goals, I would have to shift my approach as I came to find that certain components would not fit my needs in the end. This created an iterative approach to its development, sometimes requiring me to go back to completed code and utilizing a different method of completing it so it would allow the execution of other functionality. This even included the UI design of my application, having to change the type of layouts being utilized. A great example was the layout fragment I was utilizing to display my events. When implementing the ability to long click items, I found that my original layout would not allow me to select the individual events only and would allow them to select not selectable items as well (date separators). This forced me to reture to the design phase to find a way to execute the application in a way that would allow the functionality I desired. <br>
+
+In the end, I was able to fully implement all of the user requirements and goals for this project. I believe that the highlight of this application was the ability to display the users events in a clean, easy to navigate way that wasn't just a list of cards that the user would have to scroll through. By creating multiple fragments for the recycler view and then combining them to create a single recycler view was a major success. 
